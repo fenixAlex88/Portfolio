@@ -1,0 +1,95 @@
+.news {
+   margin-top: 14rem;
+   margin-bottom: 8rem;
+
+&__header {
+   text-align: center;
+   margin-bottom: 3.6rem;
+}
+&__title {
+   font-size: 3rem;
+   color: $mainBlack;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-bottom: 0.3rem;
+}
+&__text {
+   font-size: 1.2rem;
+   color: $greyLight;
+   font-weight: 300;
+}
+&__footer {
+   text-align: right;
+}
+&__link {
+   font-size: 0.94rem;
+   color: $grey;
+   text-decoration: underline;
+   &:hover{text-decoration: none;}
+
+}
+}
+.articles {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -1rem;
+
+   &__col {
+      width: 33.33%;
+      padding: 0 1rem;
+   }
+   &__item {
+      margin-bottom: 2rem;
+      
+   }
+   &__header {
+      position: relative;
+      margin-bottom: 1.35rem;
+   }
+   &__date {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 77px;
+      height: 77px;
+      padding: 0 3%;
+      text-align: center;
+
+      background-color: $mainBlack;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      font-size: 1.07rem;
+      line-height: 1.4;
+      color: $white;
+   }
+   &__image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+   }
+   &__content {
+      margin-bottom: 2rem;
+   }
+   &__title {
+      font-size: 1.2rem;
+      color: $mainBlack;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      &:hover{text-decoration: underline;}
+   }
+   &__category {
+      font-size: .8rem;
+      color: $mainBlack;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+   }
+   &__text {
+      font-size: 0.8rem;
+      color: $grey;
+      font-weight: 300;
+      line-height: 2;
+   }
+}

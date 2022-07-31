@@ -1,0 +1,288 @@
+.modal {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   display: flex;
+   padding: 1rem;
+   background-color: rgba($mainBlack, .9);
+   top: 0;
+   left: 0;
+   z-index: 666;
+
+   &__dialog {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      background-color: #f6f6f6;
+      position: relative;
+      &--sm{
+         max-width: 900px;
+      }
+   }
+   &__close {
+      position: absolute;
+      top: 0.9rem;
+      right: 0.9rem;
+      z-index: 1;
+      img {
+         width: 34px;
+         height: 34px;
+      }
+      transition: transform 0.4s ease;
+      &:hover {
+         transform: scale(1.2);
+      }
+      &:active {
+         transform: scale(0.8);
+      }
+   }
+   &__content {
+      padding: 5rem 1rem;
+   }
+   &__title {
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: $mainBlack;
+      font-weight: 700;
+      margin-bottom: 3.6rem;
+   }
+   &__subtitle {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      color: $mainBlack;
+      font-weight: 400;
+      margin-bottom: 2.4rem;
+   }
+   &__btn {
+      font-size: 0.6rem;
+   }
+}
+.modal-work {
+   display: flex;
+   min-height: 720px;
+
+
+   &__previews {
+      width: 65%;
+      position: relative;
+      overflow: hidden;
+   }
+   &__img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+   }
+   &__content {
+      position: relative;
+      width: 35%;
+      padding-top: 3.4rem;
+      padding-right: 6.6rem;
+      padding-left: 1.77rem;
+   }
+   &__header {
+      margin-bottom: 2.2rem;
+   }
+   &__title {
+      font-size: 2.12rem;
+      color: $mainBlack;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+   }
+   &__info {
+      font-size: 1.2rem;
+      color: $grey;
+      text-transform: uppercase;
+      span {margin: 0 1rem;}
+   }
+   &__client-title {
+      font-size: 1.06rem;
+      color: $mainBlack;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+   }
+   &__client-company {
+      font-size: 0.94rem;
+      color: $grey;
+      font-style: italic;
+      margin-bottom: 2.2rem;
+   }
+   &__text {
+      font-size: 0.8rem;
+      color: $grey;
+      line-height: 2;
+      font-weight: 300;
+   }
+   &__footer {
+      padding: 0 1.8rem 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+   }
+   &__btn {
+      font-size: 0.94rem;
+      color: $mainBlack;
+      text-transform: uppercase;
+      line-height: 0.9;
+   }
+}
+
+.timeline {
+   margin: 4.1rem auto;
+   display: flex;
+   width: 100%;
+   max-width: 768px;
+   position: relative;
+   &::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      background-color: $mainBlack;
+      position: absolute;
+      top: 0;
+      left: 50%;
+   }
+   &__col {
+      width: 50%;
+      &--left {
+         text-align: right;
+         padding-right: 3.2rem;
+      }
+      &--right {
+         padding-left: 3.2rem;
+      }
+   }
+   &__title {
+      font-size: 1.2rem;
+      color: $mainBlack;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 2.6rem;
+   }
+   &__item {
+      margin-bottom: 2.6rem;
+   }
+   &__date {
+      display: block;
+      font-size: 0.94rem;
+      color: $mainBlack;
+      margin-bottom: 0.8rem;
+      margin-top: 2.6rem;
+   }
+   &__subtitle {
+      font-size: 1.06rem;
+      color: $mainBlack;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+   }
+   &__position {
+      font-size: 0.94rem;
+      color: $mainBlack;
+      font-style: italic;
+   }
+
+   &__text {
+      font-size: 0.8rem;
+      color: $grey;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-top: 0.8rem;
+   }
+}
+.progress-bar {
+   margin-bottom: 2.6rem;
+   &__item {
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.3rem;
+   }
+   &__title {
+      font-size: 0.94rem;
+      font-weight: 300;
+   }
+
+   &__right {
+      padding-left: 1.2rem;
+
+   }
+   &__bar {
+      width: 139px;
+      height: 6px;
+      background-color: #efefef;
+
+   }
+   &__progress {
+      height: 100%;
+      background-color: $grey;
+   }
+}
+.contact {
+   display: flex;
+   &__left {
+      width: 48%;
+      padding: 2rem;
+   }
+   &__right {
+      width: 52%;
+      background-color: #999;
+   }
+   &__info {
+      margin: 2rem 0 3rem;
+      font-size: 0.94rem;
+      color: $mainBlack;
+      font-weight: 300;
+      &-item {
+         display: flex;
+         align-items: center;
+         margin-bottom: 0.75rem;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+      &-icon {
+         margin-right: 0.75rem;
+      }
+   }
+}
+.form {
+   &__label {
+      display: inline-block;
+      margin-top: 2rem;
+      margin-bottom: 0.6rem;
+      font-size: 0.8rem;
+      color: $mainBlack;
+      font-weight: 700;
+   }
+   &__input,
+   &__textarea {
+      display: block;
+      width: 100%;
+      padding: 1.33rem 1.8rem;
+      font-family: inherit;
+      font-size: 0.8rem;
+      color: $mainBlack;
+      font-weight: 300;
+      line-height: 1.2;
+      border: 1px solid rgba(#707070, 0.3);
+      border-radius: 1.8rem;
+      &:focus {
+         border-color: #3399c2;
+      }
+      &::placeholder {
+         color: $mainBlack;
+      }
+   }
+   &__textarea {
+      height: 200px;
+      resize: none;
+   }
+   &__group {
+      margin-bottom: 1.8rem;
+   }
+}
