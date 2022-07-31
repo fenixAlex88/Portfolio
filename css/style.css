@@ -120,21 +120,22 @@ body.no-scroll {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__inner .user {
+
+.user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.header__inner .user__avatar {
+.user__avatar {
   width: 57px;
 }
-.header__inner .user__avatar img {
+.user__avatar img {
   border-radius: 50%;
 }
-.header__inner .user__contant {
+.user__contant {
   padding-left: 9px;
 }
-.header__inner .user__name {
+.user__name {
   font-size: 1.07rem;
   color: #2B2A2C;
   font-weight: 700;
@@ -142,11 +143,12 @@ body.no-scroll {
   margin-bottom: 3px;
   max-width: 100px;
 }
-.header__inner .user__prof {
+.user__prof {
   font-size: 0.8rem;
   color: rgba(106, 105, 107, 0.7);
 }
-.header__inner .nav {
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +157,7 @@ body.no-scroll {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__inner .nav__link {
+.nav__link {
   font-size: 0.93pem;
   color: #2B2A2C;
   font-weight: 700;
@@ -163,7 +165,7 @@ body.no-scroll {
   margin-left: 2rem;
   position: relative;
 }
-.header__inner .nav__link::after {
+.nav__link::after {
   content: "";
   display: block;
   width: 0px;
@@ -176,17 +178,17 @@ body.no-scroll {
   -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
-.header__inner .nav__link:hover:not(.nav__link--btn)::after {
+.nav__link:hover:not(.nav__link--btn)::after {
   width: 100%;
 }
-.header__inner .nav__link--btn {
+.nav__link--btn {
   padding: 0.67rem 2rem;
   border: 2px solid #2B2A2C;
   border-radius: 20px;
   -webkit-transition: color 0.3s ease, background-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
-.header__inner .nav__link--btn:hover {
+.nav__link--btn:hover {
   background-color: #6A696B;
   color: #fff;
   border-color: transparent;
