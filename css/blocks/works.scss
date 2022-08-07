@@ -22,28 +22,38 @@
    &__col {
       flex-basis: 33.33%;
       padding: 1rem;
-      
+      @media ($mobile) {
+         flex-basis: 50%;
+       }
+       @media ($mobile-sm) {
+         flex-basis: 100%;
+       }
+
    }
 }
 .work {
-   position: relative;
-   padding-bottom: 4rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    height: 100%;
    border-radius: 10px;
    box-shadow: 0 0 4px rgba(#000, .25);
    overflow: hidden;
    transition: box-shadow .2s linear;
    &:hover {box-shadow: 0 0 25px rgba(#000, .40);}
-
+   @media ($mobile) {
+      max-width: 370px;
+    }
+    @media ($mobile-sm) {
+      margin: 0 auto;
+    }
    &__image {
       display: block;
       max-width: 100%;
       max-height: auto;
    }
    &__content {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
+
       padding: 1rem 0.8rem;
 
    }

@@ -2,12 +2,18 @@
    width: 100%;
    height: 100%;
    position: fixed;
-   display: flex;
+   display: none;
    padding: 1rem;
    background-color: rgba($mainBlack, .9);
    top: 0;
    left: 0;
    z-index: 666;
+   overflow:auto;
+ 
+
+   &.show {
+      display: flex;
+   }
 
    &__dialog {
       width: 100%;
@@ -15,7 +21,9 @@
       margin: auto;
       background-color: #f6f6f6;
       position: relative;
-      &--sm{
+      transform: rotateX(90deg);
+      transition: transform .3s ease;
+       &--sm{
          max-width: 900px;
       }
    }
@@ -44,7 +52,8 @@
       text-transform: uppercase;
       color: $mainBlack;
       font-weight: 700;
-      margin-bottom: 3.6rem;
+      margin-bottom: 2.4rem;
+      text-align: center;
    }
    &__subtitle {
       text-transform: uppercase;

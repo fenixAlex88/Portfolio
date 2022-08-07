@@ -1,6 +1,10 @@
 .news {
    margin-top: 14rem;
    margin-bottom: 8rem;
+   @media ($tablet) {
+      margin-top: 12rem;
+      margin-bottom: 5rem;
+   }
 
 &__header {
    text-align: center;
@@ -12,6 +16,9 @@
    text-transform: uppercase;
    font-weight: 700;
    margin-bottom: 0.3rem;
+   @media ($mobile) {
+      font-size: 2rem;
+}
 }
 &__text {
    font-size: 1.2rem;
@@ -37,10 +44,17 @@
    &__col {
       width: 33.33%;
       padding: 0 1rem;
+      @media ($mobile) {
+         width: 100%;
+   }
+
    }
    &__item {
       margin-bottom: 2rem;
-      
+      @media ($mobile) {
+         max-width: 370px;
+         margin: 0 auto 2rem;
+      }
    }
    &__header {
       position: relative;
@@ -54,7 +68,6 @@
       height: 77px;
       padding: 0 3%;
       text-align: center;
-
       background-color: $mainBlack;
       position: absolute;
       top: 0;

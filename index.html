@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <title>Portfolio</title>
 </head>
 <body>
@@ -20,12 +21,15 @@
                   <div class="user__prof">UI &amp; UX Disigner</div>
                </div>
             </div>
-            <nav class="nav">
+            <nav class="nav" id="nav">
                <a class="nav__link" href="#">work</a>
                <a class="nav__link" href="#">about me</a>
                <a class="nav__link" href="#">blog</a>
-               <a class="nav__link nav__link--btn btn" href="#">hire me</a>
+               <a class="nav__link nav__link--btn btn" href="#" data-modal="#modal_hire_me">hire me</a>
             </nav>
+            <button class="burger" type="button" id="navToggle">
+               <img class="burger__icon" src="./img/burger.svg" alt="">
+            </button>
          </div>
       </div>
    </header>
@@ -45,8 +49,8 @@
                   <a href="#" class="social__link"><img src="./img/Instagram.png" alt=""></a>
                   <a href="#" class="social__link"><img src="./img/Twitter.png" alt=""></a>
                </div>
-               <a class="btn" href="">HIRE ME</a>
-               <button class="btn">SEE MY RESUME</button>
+               <a class="btn" href="" data-modal="#modal_hire_me">HIRE ME</a>
+               <button class="btn" data-modal="#modal_resume">SEE MY RESUME</button>
             </div>
             <img class='intro__photo' src="./img/photo.png" alt="">
          </div>
@@ -57,17 +61,17 @@
    <div class="works">
       <div class="container">
          <div class="works__nav">
-            <a href="" class="works__nav-link">All</a>
-            <a href="" class="works__nav-link">App</a>
-            <a href="" class="works__nav-link">Websites</a>
-            <a href="" class="works__nav-link">Interaction</a>
+            <a href="" class="works__nav-link" data-filter="all">All</a>
+            <a href="" class="works__nav-link"data-filter="app">App</a>
+            <a href="" class="works__nav-link"data-filter="website">Websites</a>
+            <a href="" class="works__nav-link"data-filter="interaction">Interaction</a>
          </div>
          <div class="portfolio">
-            <div class="portfolio__col">
-               <div class="work">
+            <div class="portfolio__col" data-cat="app">
+               <div class="work" data-modal="#modal_project_1">
                   <img src="https://www.desktopbackground.org/p/2013/02/23/535042_bonsai-wallpapers-10-hd-wallpaper-wallpapers-pics-the-best_1920x1080_h.jpg" alt="" class="work__image">
                   <div class="work__content">
-                     <div class="work__cat">category</div>
+                     <div class="work__cat">category app</div>
                      <div class="work__title">
                         Project title
                         <time class="work__date" datetime="2020-11-22 19:20">2020</time>
@@ -75,11 +79,11 @@
                   </div>
                </div>
             </div>
-            <div class="portfolio__col">
-               <div class="work">
+            <div class="portfolio__col" data-cat="website">
+               <div class="work" data-modal="#modal_project_1">
                   <img src="https://i.ytimg.com/vi/gcFbcivfgok/hqdefault.jpg" alt="" class="work__image">
                   <div class="work__content">
-                     <div class="work__cat">category</div>
+                     <div class="work__cat">category webcite</div>
                      <div class="work__title">
                         Project title
                         <time class="work__date" datetime="2020-11-22 19:20">2020</time>
@@ -87,11 +91,11 @@
                   </div>
                </div>
             </div>
-            <div class="portfolio__col">
-               <div class="work">
+            <div class="portfolio__col" data-cat="app">
+               <div class="work" data-modal="#modal_project_1">
                   <img src="https://static.cdn.asset.aparat.com/avt/19088267-9147-b__5887.jpg" alt="" class="work__image">
                   <div class="work__content">
-                     <div class="work__cat">category</div>
+                     <div class="work__cat">category app</div>
                      <div class="work__title">
                         Project title
                         <time class="work__date" datetime="2020-11-22 19:20">2020</time>
@@ -99,11 +103,11 @@
                   </div>
                </div>
             </div>
-            <div class="portfolio__col">
-               <div class="work">
+            <div class="portfolio__col" data-cat="interaction">
+               <div class="work" data-modal="#modal_project_1">
                   <img src="https://st3.depositphotos.com/4590583/16327/i/1600/depositphotos_163278374-stock-photo-water-drops-on-black-background.jpg" alt="" class="work__image">
                   <div class="work__content">
-                     <div class="work__cat">category</div>
+                     <div class="work__cat">category interaction</div>
                      <div class="work__title">
                         Project title
                         <time class="work__date" datetime="2020-11-22 19:20">2020</time>
@@ -111,11 +115,11 @@
                   </div>
                </div>
             </div>
-            <div class="portfolio__col">
-               <div class="work">
+            <div class="portfolio__col" data-cat="interaction">
+               <div class="work" data-modal="#modal_project_1">
                   <img src="https://fullhdpictures.com/wp-content/uploads/2015/11/Magnolia-Wallpaper-HD.jpg" alt="" class="work__image">
                   <div class="work__content">
-                     <div class="work__cat">category</div>
+                     <div class="work__cat">category interaction</div>
                      <div class="work__title">
                         Project title
                         <time class="work__date" datetime="2020-11-22 19:20">2020</time>
@@ -123,11 +127,11 @@
                   </div>
                </div>
             </div>
-            <div class="portfolio__col">
-               <div class="work">
+            <div class="portfolio__col" data-cat="website">
+               <div class="work" data-modal="#modal_project_1">
                   <img src="https://www.desktopbackground.org/download/1280x800/2015/09/14/1011079_colored-light-ipad-air-2-wallpapers_2048x2048_h.jpg" alt="" class="work__image">
                   <div class="work__content">
-                     <div class="work__cat">category</div>
+                     <div class="work__cat">category webcite</div>
                      <div class="work__title">
                         Project title
                         <time class="work__date" datetime="2020-11-22 19:20">2020</time>
@@ -156,8 +160,8 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, accusantium sunt vitae, eaque, nesciunt distinctio reprehenderit dicta asperiores vero in voluptatem perspiciatis eum delectus quia? Cupiditate magni voluptates doloribus. Maiores?</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, accusantium sunt vitae, eaque, nesciunt distinctio reprehenderit dicta asperiores vero in voluptatem perspiciatis eum delectus quia? Cupiditate magni voluptates doloribus. Maiores?</p>
                </div>
-               <a class="btn" href="">HIRE ME</a>
-               <button class="btn">SEE MY RESUME</button>
+               <a class="btn" href="" data-modal="#modal_hire_me">HIRE ME</a>
+               <button class="btn" data-modal="#modal_resume">SEE MY RESUME</button>
             </div>
          </div>
       </div>
@@ -280,7 +284,7 @@
                   </a>
                </div>
             </div>
-            <nav class="footer_nav">
+            <nav class="footer__nav">
                <a href="" class="footer__nav-link">Work</a>
                <a href="" class="footer__nav-link">ABOUT ME</a>
                <a href="" class="footer__nav-link">Blog</a>
@@ -292,12 +296,19 @@
    </footer>
 
    <!--Modals-->
-   <div class="modal" style="display: none;">
+   <div class="modal" id="modal_project_1">
       <div class="modal__dialog">
-         <button class="modal__close" type="button"><img src="./img/modal-close.svg" alt="Close"></button>
+         <button class="modal__close" type="button" data-close><img src="./img/modal-close.svg" alt="Close"></button>
          <div class="modal-work">
             <div class="modal-work__previews">
+               <div id="worksSlider">
+                  <div>
                <img class='modal-work__img' src="./img/project-bg.jpg" alt="">
+               </div>
+               <div>
+                  <img class='modal-work__img' src="./img/project-bg2.jpg" alt="">
+                  </div>
+            </div>
             </div>
             <div class="modal-work__content">
                <div class="modal-work__header">
@@ -316,10 +327,10 @@
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio voluptatum corporis magni soluta nesciunt expedita accusantium voluptatem nihil, ad, repellendus minima quos! Laborum, dolorem. Debitis, eaque amet.</p>
                </div>
                <div class="modal-work__footer">
-                  <button class="modal-work__btn">
+                  <button class="modal-work__btn slickPrev">
                      <img src="./img/back.svg" height="12" alt="">
                      Previous</button>
-                  <button class="modal-work__btn">
+                  <button class="modal-work__btn slickNext">
                      Next
                      <img src="./img/next.svg" height="12" alt="">
                      </button>
@@ -329,9 +340,9 @@
       </div>
    </div><!--modal-->
 
-   <div class="modal" style="display: none;">
+   <div class="modal" id="modal_resume">
       <div class="modal__dialog">
-         <button class="modal__close" type="button"><img src="./img/modal-close.svg" alt="Close"></button>
+         <button class="modal__close" type="button" data-close><img src="./img/modal-close.svg" alt="Close"></button>
          <div class="modal__content">
             <div class="text-center"></div>
             <h3 class="modal__title">RESUME</h3>
@@ -441,13 +452,12 @@
                <div class="text-center">
                   <a href="#" class="btn">hire me</a>
                </div>
-            </div>
-         </div><!--modal__dialog-->
+            </div><!--modal__dialog-->
    </div><!--modal-->
    
-   <div class="modal"  style="display: none;">
+   <div class="modal" id="modal_hire_me">
       <div class="modal__dialog modal__dialog--sm">
-         <button class="modal__close" type="button"><img src="./img/modal-close.svg" alt="Close"></button>
+         <button class="modal__close" type="button" data-close><img src="./img/modal-close.svg" alt="Close"></button>
                <div class="contact">
                   <div class="contact__left">
                      <h3 class="modal__title mb-0">Let's talk!</h3>
@@ -478,5 +488,9 @@
       </div><!--modal__dialog-->
    </div><!--modal-->
 
+
+   <!--JavaScripts-->
+<script src="./js/slick.min.js"></script>
+<script src="./js/app.js"></script>
 </body>
 </html>
