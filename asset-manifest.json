@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dcd8a4c1.css",
-    "main.js": "/portfolio/static/js/main.02bd7b1b.js",
+    "main.css": "/portfolio/static/css/main.8cae6288.css",
+    "main.js": "/portfolio/static/js/main.e8a538df.js",
     "static/media/todo02-big.jpg": "/portfolio/static/media/todo02-big.7b7e1ffe49fe54fa0534.jpg",
     "static/media/todo01-big.jpg": "/portfolio/static/media/todo01-big.526a0a00a2b555e0c527.jpg",
     "static/media/Iam.png": "/portfolio/static/media/Iam.9ccb558b52ceb61fe45c.png",
@@ -11,23 +11,26 @@
     "static/media/game03-big.jpg": "/portfolio/static/media/game03-big.fcd2e241012623bcb88c.jpg",
     "static/media/game02-big.jpg": "/portfolio/static/media/game02-big.17a2c4cb4bf976efe9b0.jpg",
     "static/media/game01-big.jpg": "/portfolio/static/media/game01-big.c0c0e7bbbf6e826f70d4.jpg",
+    "static/media/weather02-big.jpg": "/portfolio/static/media/weather02-big.1e2be390c90cf70f7f3a.jpg",
     "static/media/calc02-big.jpg": "/portfolio/static/media/calc02-big.a41636ac552e93fb513b.jpg",
     "static/media/calc01-big.jpg": "/portfolio/static/media/calc01-big.34ea3885d1850a91de88.jpg",
     "static/media/landing.jpg": "/portfolio/static/media/landing.e598d791233c9b234cba.jpg",
     "static/media/todo.jpg": "/portfolio/static/media/todo.4af9889c9d8981a1a8b0.jpg",
     "static/media/game.jpg": "/portfolio/static/media/game.18ee86f81f08d040ac68.jpg",
+    "static/media/weather01-big.jpg": "/portfolio/static/media/weather01-big.8ffae2fd9c8d80bf94c4.jpg",
     "static/media/calc.jpg": "/portfolio/static/media/calc.0b052e603d22fb8902e0.jpg",
-    "static/media/sun.svg": "/portfolio/static/media/sun.4d47962acd6c83e7e7aca592ec39545f.svg",
-    "static/media/moon.svg": "/portfolio/static/media/moon.829f022e764b1d37016e364c5447dfdb.svg",
-    "static/media/gitHub.svg": "/portfolio/static/media/gitHub.db1e3cfa3aa61658d837d82e113dc1fe.svg",
-    "static/media/gitHub-black.svg": "/portfolio/static/media/gitHub-black.61157a57f0853aa9fd2f3622b730cdfc.svg",
-    "static/media/linkedIn.svg": "/portfolio/static/media/linkedIn.c05a2ae5b158581b0f27510e1d79e379.svg",
+    "static/media/weather.jpg": "/portfolio/static/media/weather.6a2f205fa891d3b093a7.jpg",
+    "static/media/sun.svg": "/portfolio/static/media/sun.f8606845ee97bee21c3bc95b2dec3866.svg",
+    "static/media/moon.svg": "/portfolio/static/media/moon.312bed9230c94183d589bcc499993093.svg",
+    "static/media/gitHub.svg": "/portfolio/static/media/gitHub.a5541850a2a6843f34467a91657cc39d.svg",
+    "static/media/gitHub-black.svg": "/portfolio/static/media/gitHub-black.879a08487a26f06ac21248a96c866696.svg",
+    "static/media/linkedIn.svg": "/portfolio/static/media/linkedIn.55523f62797ddb51e960322dd47e5636.svg",
     "index.html": "/portfolio/index.html",
-    "main.dcd8a4c1.css.map": "/portfolio/static/css/main.dcd8a4c1.css.map",
-    "main.02bd7b1b.js.map": "/portfolio/static/js/main.02bd7b1b.js.map"
+    "main.8cae6288.css.map": "/portfolio/static/css/main.8cae6288.css.map",
+    "main.e8a538df.js.map": "/portfolio/static/js/main.e8a538df.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcd8a4c1.css",
-    "static/js/main.02bd7b1b.js"
+    "static/css/main.8cae6288.css",
+    "static/js/main.e8a538df.js"
   ]
 }
