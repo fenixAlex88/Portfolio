@@ -2,6 +2,9 @@ import project01 from '../img/projects/game.jpg';
 import project01Big_01 from '../img/projects/game01-big.jpg';
 import project01Big_02 from '../img/projects/game02-big.jpg';
 import project01Big_03 from '../img/projects/game03-big.jpg';
+import project02 from '../img/projects/weather.jpg';
+import project02Big_01 from '../img/projects/weather01-big.jpg';
+import project02Big_02 from '../img/projects/weather02-big.jpg';
 import project04 from '../img/projects/todo.jpg';
 import project04Big_01 from '../img/projects/todo01-big.jpg';
 import project04Big_02 from '../img/projects/todo02-big.jpg';
@@ -37,7 +40,7 @@ export const projects = [
       { link: project04Big_01, title: 'empty', id: 1 },
       { link: project04Big_02, title: 'toods', id: 2 },
     ],
-    gitHubLink: 'https://github.com/',
+    gitHubLink: 'https://github.com/fenixAlex88/todo',
   },
   {
     id: 5,
@@ -49,7 +52,18 @@ export const projects = [
       { link: project05Big_02, title: 'Transports', id: 2 },
       { link: project05Big_03, title: 'Answers', id: 3 },
     ],
-    gitHubLink: 'https://github.com/',
+    gitHubLink: 'https://github.com/fenixAlex88/SVETOFOR-landing',
+  },
+  {
+    id: 2,
+    title: 'Weather App',
+    skills: 'JavaScript, JSON, Fetch API',
+    img: project02,
+    imgsBig: [
+      { link: project02Big_01, title: 'Search weather', id: 1 },
+      { link: project02Big_02, title: 'City weather', id: 2 },
+    ],
+    gitHubLink: 'https://github.com/fenixAlex88/weather',
   },
   {
     id: 6,
@@ -60,6 +74,6 @@ export const projects = [
       { link: project06Big_01, title: 'Main View', id: 1 },
       { link: project06Big_02, title: 'Calculated', id: 2 },
     ],
-    gitHubLink: 'https://github.com/fenixAlex88/',
+    gitHubLink: 'https://github.com/fenixAlex88/calculator',
   },
 ];
