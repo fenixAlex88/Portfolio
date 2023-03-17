@@ -5,7 +5,7 @@ import { projects } from '../helpers/projectsList';
 
 const Project = () => {
   const { id } = useParams();
-  const { title, imgsBig, skills, gitHubLink = null } = projects.find((project) => project.id === +id);
+  const { title, imgsBig, skills, description, gitHubLink = null } = projects.find((project) => project.id === +id);
   return (
     <main className="section">
       <div className="container">
@@ -18,6 +18,9 @@ const Project = () => {
           </Carusel>
           <div className="project-details__desc">
             <p>{skills}</p>
+          </div>
+          <div className='project-descriptoin'>
+            <p>{description}</p>
           </div>
           {gitHubLink && <BtnGitHub link={gitHubLink} />}
         </div>

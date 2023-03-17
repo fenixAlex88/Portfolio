@@ -6,7 +6,7 @@
   --blackpure: #000;
   --black: #171718;
   --black-border: #26292d;
-  --white: #fff;
+  --white: #dfe0f0;
   --purple: #5c62ec;
 
   /* Nav */
@@ -163,6 +163,10 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.3;
+}
+
+.project-descriptoin{
+  margin-bottom: 30px;
 }
 
 /* Content list */
