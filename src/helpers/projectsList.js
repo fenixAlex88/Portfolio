@@ -77,7 +77,7 @@ export const projects = [
     ],
     description:
       'One-page website of a cargo transportation company. The site has Tabs, a Slider, a shipping cost calculator, as well as a modal window with a feedback form.',
-    gitHubLink: 'https://github.com/fenixAlex88/',
+    gitHubLink: 'https://github.com/fenixAlex88/cargo',
   },
   {
     id: 2,
