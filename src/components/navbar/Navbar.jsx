@@ -13,17 +13,17 @@ const Navbar = () => {
           <BtnDarkMode />
           <ul className="nav-list">
             <li className="nav-list__item">
-              <NavLink to="/portfolio" className={({ isActive }) => `nav-list__link ${isActive ? 'nav-list__link--active' : ''}`} end>
+              <NavLink to="/" className={({ isActive }) => `nav-list__link ${isActive ? 'nav-list__link--active' : ''}`} end>
                 Home
               </NavLink>
             </li>
             <li className="nav-list__item">
-              <NavLink to="/portfolio/projects" className={({ isActive }) => `nav-list__link ${isActive ? 'nav-list__link--active' : ''}`}>
+              <NavLink to="/projects" className={({ isActive }) => `nav-list__link ${isActive ? 'nav-list__link--active' : ''}`}>
                 Projects
               </NavLink>
             </li>
             <li className="nav-list__item">
-              <NavLink to="/portfolio/contacts" className={({ isActive }) => `nav-list__link ${isActive ? 'nav-list__link--active' : ''}`}>
+              <NavLink to="/contacts" className={({ isActive }) => `nav-list__link ${isActive ? 'nav-list__link--active' : ''}`}>
                 Contacts
               </NavLink>
             </li>

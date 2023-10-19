@@ -185,17 +185,12 @@ body {
   color: var(--accent);
 }
 
-.content-list__item {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 .content-list__item p + p {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
 }
 .content-list a,
 .content-list p{
- font-size: 26px;
+ font-size: 18px;
 }
 
 @media (max-width: 620px) {

@@ -12,7 +12,7 @@ function App() {
       <Router>
         <div className="App">
         <Routes>
-          <Route path="/portfolio" element={<MainLayout />}>
+          <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path="projects" element={<Projects />} />
             <Route path="project/:id" element={<Project />} />
